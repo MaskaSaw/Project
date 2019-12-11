@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/ISELab/Lab2Dop/codeConverter.xst" -ofn "E:/ISELab/Lab2Dop/codeConverter.syr" 

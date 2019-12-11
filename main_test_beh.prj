@@ -1,0 +1,7 @@
+vhdl work "MY_OR.vhd"
+vhdl work "half-adder.vhd"
+vhdl work "adder.vhd"
+vhdl work "nAdder.vhd"
+vhdl work "codeConverter.vhd"
+vhdl work "main.vhd"
+vhdl work "main_test.vhd"

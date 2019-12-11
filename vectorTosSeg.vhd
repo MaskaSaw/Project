@@ -1,0 +1,43 @@
+------------------------------------------------------------------------------------
+---- Company: 
+---- Engineer: 
+---- 
+---- Create Date:    03:04:44 12/11/2019 
+---- Design Name: 
+---- Module Name:    vectorTosSeg - Behavioral 
+---- Project Name: 
+---- Target Devices: 
+---- Tool versions: 
+---- Description: 
+----
+---- Dependencies: 
+----
+---- Revision: 
+---- Revision 0.01 - File Created
+---- Additional Comments: 
+----
+------------------------------------------------------------------------------------
+--library IEEE;
+--use IEEE.STD_LOGIC_1164.ALL;
+--
+---- Uncomment the following library declaration if using
+---- arithmetic functions with Signed or Unsigned values
+----use IEEE.NUMERIC_STD.ALL;
+--
+---- Uncomment the following library declaration if instantiating
+---- any Xilinx primitives in this code.
+----library UNISIM;
+----use UNISIM.VComponents.all;
+--
+--entity vectorTosSeg is
+--	port (
+--		vector : in std_logic_vector(7 downto 0);
+----		sSeg : out std_logic_vector(7 downto 0);
+--end vectorTosSeg;
+--
+--architecture Behavioral of vectorTosSeg is
+--
+--begin
+----	if
+--end Behavioral;
+--

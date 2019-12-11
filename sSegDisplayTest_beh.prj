@@ -1,0 +1,2 @@
+vhdl work "sSegDisplay.vhd"
+vhdl work "sSegDisplayTest.vhd"

@@ -1,0 +1,3 @@
+vhdl work "MY_OR.vhd"
+vhdl work "half-adder.vhd"
+vhdl work "adder.vhd"

@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "E:/ISELab/Lab2Dop/main.xst" -ofn "E:/ISELab/Lab2Dop/main.syr" 
+xst -intstyle ise -ifn "C:/dd/Lab2Dop/main.xst" -ofn "C:/dd/Lab2Dop/main.syr" 
+xst -intstyle ise -ifn "C:/dd/Lab2Dop/main.xst" -ofn "C:/dd/Lab2Dop/main.syr" 
+xst -intstyle ise -ifn "C:/Study/POCP/Project/main.xst" -ofn "C:/Study/POCP/Project/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 main.ngc main.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+xst -intstyle ise -ifn "C:/Study/POCP/Project/main.xst" -ofn "C:/Study/POCP/Project/main.syr" 
+xst -intstyle ise -ifn "C:/Study/POCP/Project/main.xst" -ofn "C:/Study/POCP/Project/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 main.ngc main.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 
+xst -intstyle ise -ifn "C:/Study/POCP/Project/main.xst" -ofn "C:/Study/POCP/Project/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 main.ngc main.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf 

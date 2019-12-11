@@ -1,0 +1,2 @@
+vhdl isim_temp "half-adder.vhd"
+vhdl isim_temp "halfAdderTest.vhd"

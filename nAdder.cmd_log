@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "E:/ISELab/Lab2Dop/nAdder.xst" -ofn "E:/ISELab/Lab2Dop/nAdder.syr" 
+xst -intstyle ise -ifn "E:/ISELab/Lab2Dop/nAdder.xst" -ofn "E:/ISELab/Lab2Dop/nAdder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 nAdder.ngc nAdder.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o nAdder_map.ncd nAdder.ngd nAdder.pcf 
+par -w -intstyle ise -ol high -mt off nAdder_map.ncd nAdder.ncd nAdder.pcf 
+xst -intstyle ise -ifn "E:/ISELab/Lab2Dop/nAdder.xst" -ofn "E:/ISELab/Lab2Dop/nAdder.syr" 
