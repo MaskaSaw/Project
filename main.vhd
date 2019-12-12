@@ -5,7 +5,7 @@ entity main is
 	 Generic (n : integer := 8);
     Port ( A : in  STD_LOGIC_VECTOR (n-1 downto 0);
            B : in  STD_LOGIC_VECTOR (n-1 downto 0);
-			  Clk, Rst: in STD_LOGIC;       
+			  Clk: in STD_LOGIC;       
            add_button : in  STD_LOGIC;
            diff_button : in  STD_LOGIC;
            rst_button : in  STD_LOGIC;
@@ -76,9 +76,9 @@ begin
 		
 	U4: sSegDisplay port map (Clk, result, sign_res, seg, an);
 	
-	FSM_dff: process(Clk, next_state, Rst)
+	FSM_dff: process(Clk, next_state, rst_button)
 	begin
-		if Rst = '1' then 
+		if rst_button = '1' then 
 			current_state <= S0;
 		elsif rising_edge(Clk) then
 			current_state <= next_state;
