@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.87 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.87 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Reading design: main.prj
 
@@ -105,26 +105,32 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "C:\Study\POCP\Project\MY_OR.vhd" into library work
+Parsing VHDL file "C:\Users\Maska_O\Documents\GitHub\Project\MY_OR.vhd" into library work
 Parsing entity <MY_OR>.
 Parsing architecture <Behavioral> of entity <my_or>.
-Parsing VHDL file "C:\Study\POCP\Project\half-adder.vhd" into library work
+Parsing VHDL file "C:\Users\Maska_O\Documents\GitHub\Project\half-adder.vhd" into library work
 Parsing entity <halfAdder>.
 Parsing architecture <Behavioral> of entity <halfadder>.
-Parsing VHDL file "C:\Study\POCP\Project\adder.vhd" into library work
+Parsing VHDL file "C:\Users\Maska_O\Documents\GitHub\Project\Decider.vhd" into library work
+Parsing entity <Decider>.
+Parsing architecture <Behavioral> of entity <decider>.
+Parsing VHDL file "C:\Users\Maska_O\Documents\GitHub\Project\adder.vhd" into library work
 Parsing entity <adder>.
 Parsing architecture <Behavioral> of entity <adder>.
-Parsing VHDL file "C:\Study\POCP\Project\nAdder.vhd" into library work
+Parsing VHDL file "C:\Users\Maska_O\Documents\GitHub\Project\sSegDisplay.vhd" into library work
+Parsing entity <sSegDisplay>.
+Parsing architecture <Behavioral> of entity <ssegdisplay>.
+Parsing VHDL file "C:\Users\Maska_O\Documents\GitHub\Project\nAdder.vhd" into library work
 Parsing entity <nAdder>.
 Parsing architecture <Behavioral> of entity <nadder>.
-Parsing VHDL file "C:\Study\POCP\Project\codeConverter.vhd" into library work
+Parsing VHDL file "C:\Users\Maska_O\Documents\GitHub\Project\codeConverter.vhd" into library work
 Parsing entity <codeConverter>.
 Parsing architecture <Behavioral> of entity <codeconverter>.
-Parsing VHDL file "C:\Study\POCP\Project\AsyncRegister.vhd" into library work
+Parsing VHDL file "C:\Users\Maska_O\Documents\GitHub\Project\AsyncRegister.vhd" into library work
 Parsing entity <SyncRegister>.
 Parsing architecture <Structural> of entity <syncregister>.
 Parsing architecture <Behavioral> of entity <syncregister>.
-Parsing VHDL file "C:\Study\POCP\Project\main.vhd" into library work
+Parsing VHDL file "C:\Users\Maska_O\Documents\GitHub\Project\main.vhd" into library work
 Parsing entity <main>.
 Parsing architecture <Behavioral> of entity <main>.
 
@@ -138,6 +144,10 @@ Elaborating entity <codeConverter> (architecture <Behavioral>) with generics fro
 
 Elaborating entity <nAdder> (architecture <Behavioral>) with generics from library <work>.
 
+Elaborating entity <Decider> (architecture <Behavioral>) with generics from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Maska_O\Documents\GitHub\Project\Decider.vhd" Line 27: load should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Maska_O\Documents\GitHub\Project\Decider.vhd" Line 29: b should be on the sensitivity list of the process
+
 Elaborating entity <adder> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <halfAdder> (architecture <Behavioral>) from library <work>.
@@ -145,21 +155,20 @@ Elaborating entity <halfAdder> (architecture <Behavioral>) from library <work>.
 Elaborating entity <MY_OR> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <SyncRegister> (architecture <Behavioral>) with generics from library <work>.
-INFO:HDLCompiler:679 - "C:\Study\POCP\Project\main.vhd" Line 110. Case statement is complete. others clause is never selected
-WARNING:HDLCompiler:92 - "C:\Study\POCP\Project\main.vhd" Line 119: preres should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "C:\Study\POCP\Project\main.vhd" Line 120: tsum should be on the sensitivity list of the process
-WARNING:Xst:2972 - "C:\Study\POCP\Project\main.vhd" line 61. All outputs of instance <U2> of block <SyncRegister> are unconnected in block <main>. Underlying logic will be removed.
+
+Elaborating entity <sSegDisplay> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\Maska_O\Documents\GitHub\Project\main.vhd" Line 119. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "C:\Users\Maska_O\Documents\GitHub\Project\main.vhd" Line 133: preres should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Maska_O\Documents\GitHub\Project\main.vhd" Line 134: tsum should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <main>.
-    Related source file is "C:\Study\POCP\Project\main.vhd".
+    Related source file is "C:\Users\Maska_O\Documents\GitHub\Project\main.vhd".
         n = 8
-WARNING:Xst:647 - Input <load_button> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Study\POCP\Project\main.vhd" line 58: Output port <CO> of the instance <U1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Study\POCP\Project\main.vhd" line 61: Output port <Dout> of the instance <U2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Maska_O\Documents\GitHub\Project\main.vhd" line 68: Output port <CO> of the instance <U1> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <current_state>.
     Found finite state machine <FSM_0> for signal <current_state>.
     -----------------------------------------------------------------------
@@ -175,19 +184,18 @@ INFO:Xst:3210 - "C:\Study\POCP\Project\main.vhd" line 61: Output port <Dout> of 
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 1-bit 3-to-1 multiplexer for signal <current_state[1]_X_5_o_Mux_10_o> created at line 78.
-    Found 1-bit 4-to-1 multiplexer for signal <current_state[1]_PWR_13_o_Mux_11_o> created at line 78.
-    Found 8-bit 3-to-1 multiplexer for signal <Pout> created at line 116.
+    Found 1-bit 3-to-1 multiplexer for signal <current_state[1]_X_5_o_Mux_10_o> created at line 90.
+    Found 1-bit 4-to-1 multiplexer for signal <current_state[1]_PWR_15_o_Mux_11_o> created at line 90.
+    Found 8-bit 3-to-1 multiplexer for signal <result> created at line 125.
 WARNING:Xst:737 - Found 1-bit latch for signal <operation>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <sign_res>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
-	inferred   2 Latch(s).
-	inferred   3 Multiplexer(s).
+	inferred   1 Latch(s).
+	inferred   4 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <main> synthesized.
 
 Synthesizing Unit <codeConverter>.
-    Related source file is "C:\Study\POCP\Project\codeConverter.vhd".
+    Related source file is "C:\Users\Maska_O\Documents\GitHub\Project\codeConverter.vhd".
         n = 8
     Found 8-bit adder for signal <in_vector[7]_GND_6_o_add_1_OUT> created at line 15.
     Summary:
@@ -196,41 +204,77 @@ Synthesizing Unit <codeConverter>.
 Unit <codeConverter> synthesized.
 
 Synthesizing Unit <nAdder>.
-    Related source file is "C:\Study\POCP\Project\nAdder.vhd".
+    Related source file is "C:\Users\Maska_O\Documents\GitHub\Project\nAdder.vhd".
         n = 8
     Summary:
 	no macro.
 Unit <nAdder> synthesized.
 
+Synthesizing Unit <Decider>.
+    Related source file is "C:\Users\Maska_O\Documents\GitHub\Project\Decider.vhd".
+        N = 8
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Decider> synthesized.
+
 Synthesizing Unit <adder>.
-    Related source file is "C:\Study\POCP\Project\adder.vhd".
+    Related source file is "C:\Users\Maska_O\Documents\GitHub\Project\adder.vhd".
     Summary:
 	no macro.
 Unit <adder> synthesized.
 
 Synthesizing Unit <halfAdder>.
-    Related source file is "C:\Study\POCP\Project\half-adder.vhd".
+    Related source file is "C:\Users\Maska_O\Documents\GitHub\Project\half-adder.vhd".
     Summary:
 Unit <halfAdder> synthesized.
 
 Synthesizing Unit <MY_OR>.
-    Related source file is "C:\Study\POCP\Project\MY_OR.vhd".
+    Related source file is "C:\Users\Maska_O\Documents\GitHub\Project\MY_OR.vhd".
     Summary:
 	no macro.
 Unit <MY_OR> synthesized.
+
+Synthesizing Unit <SyncRegister>.
+    Related source file is "C:\Users\Maska_O\Documents\GitHub\Project\AsyncRegister.vhd".
+        N = 8
+    Found 8-bit register for signal <reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <SyncRegister> synthesized.
+
+Synthesizing Unit <sSegDisplay>.
+    Related source file is "C:\Users\Maska_O\Documents\GitHub\Project\sSegDisplay.vhd".
+    Found 13-bit register for signal <counter>.
+    Found 13-bit adder for signal <counter[12]_GND_15_o_add_2_OUT> created at line 54.
+    Found 32x7-bit Read Only RAM for signal <segNum>
+    Found 8x8-bit Read Only RAM for signal <intAn>
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  13 D-type flip-flop(s).
+	inferred  19 Multiplexer(s).
+Unit <sSegDisplay> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 2
+# RAMs                                                 : 2
+ 32x7-bit single-port Read Only RAM                    : 1
+ 8x8-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 3
+ 13-bit adder                                          : 1
  8-bit adder                                           : 2
-# Latches                                              : 2
- 1-bit latch                                           : 2
-# Multiplexers                                         : 5
+# Registers                                            : 2
+ 13-bit register                                       : 1
+ 8-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Multiplexers                                         : 26
+ 1-bit 2-to-1 multiplexer                              : 20
  1-bit 3-to-1 multiplexer                              : 1
  1-bit 4-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 3
  8-bit 3-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 # Xors                                                 : 16
@@ -242,19 +286,53 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1290 - Hierarchical block <U3> is unconnected in block <U2[7].G>.
+WARNING:Xst:1290 - Hierarchical block <U3> is unconnected in block <U3[7].G>.
    It will be removed from the design.
+
+Synthesizing (advanced) Unit <sSegDisplay>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_intAn> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <intAn>         |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_segNum> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <currentNumber> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <segNum>        |          |
+    -----------------------------------------------------------------------
+Unit <sSegDisplay> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# RAMs                                                 : 2
+ 32x7-bit single-port distributed Read Only RAM        : 1
+ 8x8-bit single-port distributed Read Only RAM         : 1
 # Adders/Subtractors                                   : 2
  8-bit adder                                           : 2
-# Multiplexers                                         : 5
+# Counters                                             : 1
+ 13-bit up counter                                     : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Multiplexers                                         : 26
+ 1-bit 2-to-1 multiplexer                              : 20
  1-bit 3-to-1 multiplexer                              : 1
  1-bit 4-to-1 multiplexer                              : 1
- 8-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 3
  8-bit 3-to-1 multiplexer                              : 1
 # FSMs                                                 : 1
 # Xors                                                 : 16
@@ -275,11 +353,15 @@ Optimizing FSM <FSM_0> on signal <current_state[1:2]> with user encoding.
  s2    | 10
 -------------------
 
+Optimizing unit <SyncRegister> ...
+
 Optimizing unit <main> ...
 
 Optimizing unit <nAdder> ...
 
 Optimizing unit <codeConverter> ...
+
+Optimizing unit <sSegDisplay> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -291,8 +373,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 2
- Flip-Flops                                            : 2
+# Registers                                            : 23
+ Flip-Flops                                            : 23
 
 =========================================================================
 
@@ -315,21 +397,29 @@ Top Level Output File Name         : main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 42
+# BELS                             : 105
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 12
 #      LUT2                        : 2
-#      LUT3                        : 8
-#      LUT4                        : 7
-#      LUT5                        : 11
-#      LUT6                        : 13
-#      MUXF7                       : 1
-# FlipFlops/Latches                : 4
+#      LUT3                        : 9
+#      LUT4                        : 5
+#      LUT5                        : 20
+#      LUT6                        : 29
+#      MUXCY                       : 12
+#      VCC                         : 1
+#      XORCY                       : 13
+# FlipFlops/Latches                : 24
+#      FD                          : 13
 #      FDC                         : 2
-#      LD                          : 2
-# Clock Buffers                    : 1
+#      FDE                         : 8
+#      LD                          : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 31
-#      IBUF                        : 22
-#      OBUF                        : 9
+# IO Buffers                       : 39
+#      IBUF                        : 24
+#      OBUF                        : 15
 
 Device utilization summary:
 ---------------------------
@@ -338,24 +428,23 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:               3  out of  126800     0%  
- Number of Slice LUTs:                   41  out of  63400     0%  
-    Number used as Logic:                41  out of  63400     0%  
+ Number of Slice Registers:              24  out of  126800     0%  
+ Number of Slice LUTs:                   78  out of  63400     0%  
+    Number used as Logic:                78  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     41
-   Number with an unused Flip Flop:      38  out of     41    92%  
-   Number with an unused LUT:             0  out of     41     0%  
-   Number of fully used LUT-FF pairs:     3  out of     41     7%  
-   Number of unique control sets:         3
+ Number of LUT Flip Flop pairs used:     78
+   Number with an unused Flip Flop:      54  out of     78    69%  
+   Number with an unused LUT:             0  out of     78     0%  
+   Number of fully used LUT-FF pairs:    24  out of     78    30%  
+   Number of unique control sets:         4
 
 IO Utilization: 
- Number of IOs:                          34
- Number of bonded IOBs:                  32  out of    210    15%  
-    IOB Flip Flops/Latches:               1
+ Number of IOs:                          40
+ Number of bonded IOBs:                  40  out of    210    19%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -378,9 +467,9 @@ Clock Information:
 -------------------------------------------------------------------------------+------------------------+-------+
 Clock Signal                                                                   | Clock buffer(FF name)  | Load  |
 -------------------------------------------------------------------------------+------------------------+-------+
-current_state[1]_PWR_13_o_Mux_11_o(Mmux_current_state[1]_PWR_13_o_Mux_11_o11:O)| NONE(*)(operation)     | 1     |
-current_state_FSM_FFd1                                                         | NONE(sign_res)         | 1     |
-Clk                                                                            | BUFGP                  | 2     |
+current_state[1]_PWR_15_o_Mux_11_o(Mmux_current_state[1]_PWR_15_o_Mux_11_o11:O)| NONE(*)(operation)     | 1     |
+Clk                                                                            | IBUF+BUFG              | 15    |
+save_button                                                                    | BUFGP                  | 8     |
 -------------------------------------------------------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -395,10 +484,10 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 0.901ns (Maximum Frequency: 1109.508MHz)
-   Minimum input arrival time before clock: 2.826ns
-   Maximum output required time after clock: 4.981ns
-   Maximum combinational path delay: 4.536ns
+   Minimum period: 1.854ns (Maximum Frequency: 539.287MHz)
+   Minimum input arrival time before clock: 2.467ns
+   Maximum output required time after clock: 5.486ns
+   Maximum combinational path delay: 5.206ns
 
 Timing Details:
 ---------------
@@ -406,75 +495,88 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'Clk'
-  Clock period: 0.901ns (frequency: 1109.508MHz)
-  Total number of paths / destination ports: 4 / 2
+  Clock period: 1.737ns (frequency: 575.606MHz)
+  Total number of paths / destination ports: 97 / 15
 -------------------------------------------------------------------------
-Delay:               0.901ns (Levels of Logic = 1)
-  Source:            current_state_FSM_FFd2 (FF)
-  Destination:       current_state_FSM_FFd2 (FF)
+Delay:               1.737ns (Levels of Logic = 14)
+  Source:            U4/counter_0 (FF)
+  Destination:       U4/counter_12 (FF)
   Source Clock:      Clk rising
   Destination Clock: Clk rising
 
-  Data Path: current_state_FSM_FFd2 to current_state_FSM_FFd2
+  Data Path: U4/counter_0 to U4/counter_12
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             13   0.361   0.435  current_state_FSM_FFd2 (current_state_FSM_FFd2)
-     LUT5:I3->O            1   0.097   0.000  current_state_FSM_FFd1-In1 (current_state_FSM_FFd1-In)
-     FDC:D                     0.008          current_state_FSM_FFd1
+     FD:C->Q               1   0.361   0.279  U4/counter_0 (U4/counter_0)
+     INV:I->O              1   0.113   0.000  U4/Mcount_counter_lut<0>_INV_0 (U4/Mcount_counter_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  U4/Mcount_counter_cy<0> (U4/Mcount_counter_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  U4/Mcount_counter_cy<1> (U4/Mcount_counter_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  U4/Mcount_counter_cy<2> (U4/Mcount_counter_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  U4/Mcount_counter_cy<3> (U4/Mcount_counter_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  U4/Mcount_counter_cy<4> (U4/Mcount_counter_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  U4/Mcount_counter_cy<5> (U4/Mcount_counter_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  U4/Mcount_counter_cy<6> (U4/Mcount_counter_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  U4/Mcount_counter_cy<7> (U4/Mcount_counter_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  U4/Mcount_counter_cy<8> (U4/Mcount_counter_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  U4/Mcount_counter_cy<9> (U4/Mcount_counter_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  U4/Mcount_counter_cy<10> (U4/Mcount_counter_cy<10>)
+     MUXCY:CI->O           0   0.023   0.000  U4/Mcount_counter_cy<11> (U4/Mcount_counter_cy<11>)
+     XORCY:CI->O           1   0.370   0.000  U4/Mcount_counter_xor<12> (U4/Result<12>)
+     FD:D                      0.008          U4/counter_12
     ----------------------------------------
-    Total                      0.901ns (0.466ns logic, 0.435ns route)
-                                       (51.7% logic, 48.3% route)
+    Total                      1.737ns (1.458ns logic, 0.279ns route)
+                                       (83.9% logic, 16.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[1]_PWR_13_o_Mux_11_o'
+Timing constraint: Default period analysis for Clock 'save_button'
+  Clock period: 1.854ns (frequency: 539.287MHz)
+  Total number of paths / destination ports: 38 / 8
+-------------------------------------------------------------------------
+Delay:               1.854ns (Levels of Logic = 3)
+  Source:            U2/reg_6 (FF)
+  Destination:       U2/reg_7 (FF)
+  Source Clock:      save_button rising
+  Destination Clock: save_button rising
+
+  Data Path: U2/reg_6 to U2/reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.361   0.299  U2/reg_6 (U2/reg_6)
+     LUT6:I5->O            2   0.097   0.383  U1/U1/Mmux_p7 (U1/tB<6>)
+     LUT5:I3->O            1   0.097   0.511  U1/U3[5].G/U3/O1_SW1 (N9)
+     LUT6:I3->O            9   0.097   0.000  U1/U3[7].G/U2/Mxor_S_xo<0>1 (tSum<7>)
+     FDE:D                     0.008          U2/reg_7
+    ----------------------------------------
+    Total                      1.854ns (0.660ns logic, 1.194ns route)
+                                       (35.6% logic, 64.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state[1]_PWR_15_o_Mux_11_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
-Offset:              0.487ns (Levels of Logic = 2)
+Offset:              0.481ns (Levels of Logic = 2)
   Source:            add_button (PAD)
   Destination:       operation (LATCH)
-  Destination Clock: current_state[1]_PWR_13_o_Mux_11_o falling
+  Destination Clock: current_state[1]_PWR_15_o_Mux_11_o falling
 
   Data Path: add_button to operation
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   0.001   0.389  add_button_IBUF (add_button_IBUF)
+     IBUF:I->O             2   0.001   0.383  add_button_IBUF (add_button_IBUF)
      LUT4:I2->O            1   0.097   0.000  Mmux_current_state[1]_X_5_o_Mux_10_o11 (current_state[1]_X_5_o_Mux_10_o)
      LD:D                     -0.028          operation
     ----------------------------------------
-    Total                      0.487ns (0.098ns logic, 0.389ns route)
-                                       (20.1% logic, 79.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'current_state_FSM_FFd1'
-  Total number of paths / destination ports: 44 / 1
--------------------------------------------------------------------------
-Offset:              2.826ns (Levels of Logic = 6)
-  Source:            B<2> (PAD)
-  Destination:       sign_res (LATCH)
-  Destination Clock: current_state_FSM_FFd1 falling
-
-  Data Path: B<2> to sign_res
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             5   0.001   0.575  B_2_IBUF (B_2_IBUF)
-     LUT4:I0->O            2   0.097   0.687  U0/Mmux_out_vector31 (tB<2>)
-     LUT6:I1->O            4   0.097   0.393  U1/U2[2].G/U3/O1 (U1/carryOver<2>)
-     LUT5:I3->O            3   0.097   0.389  U1/U2[4].G/U3/O1 (U1/carryOver<4>)
-     LUT5:I3->O            1   0.097   0.295  U1/U2[6].G/U3/O1 (U1/carryOver<6>)
-     LUT3:I2->O            8   0.097   0.000  U1/U2[7].G/U2/Mxor_S_xo<0>1 (tSum<7>)
-     LD:D                     -0.028          sign_res
-    ----------------------------------------
-    Total                      2.826ns (0.486ns logic, 2.340ns route)
-                                       (17.2% logic, 82.8% route)
+    Total                      0.481ns (0.098ns logic, 0.383ns route)
+                                       (20.4% logic, 79.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
   Total number of paths / destination ports: 10 / 4
 -------------------------------------------------------------------------
-Offset:              1.098ns (Levels of Logic = 3)
+Offset:              1.059ns (Levels of Logic = 3)
   Source:            diff_button (PAD)
   Destination:       current_state_FSM_FFd2 (FF)
   Destination Clock: Clk rising
@@ -483,104 +585,135 @@ Offset:              1.098ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.001   0.383  diff_button_IBUF (diff_button_IBUF)
-     LUT2:I0->O            1   0.097   0.511  current_state_FSM_FFd2-In21_SW0 (N12)
-     LUT6:I3->O            1   0.097   0.000  current_state_FSM_FFd2-In1 (current_state_FSM_FFd2-In)
+     IBUF:I->O             1   0.001   0.556  diff_button_IBUF (diff_button_IBUF)
+     LUT4:I0->O            2   0.097   0.299  current_state_FSM_FFd2-In21 (current_state_FSM_FFd2-In2)
+     LUT6:I5->O            1   0.097   0.000  current_state_FSM_FFd2-In1 (current_state_FSM_FFd2-In)
      FDC:D                     0.008          current_state_FSM_FFd2
     ----------------------------------------
-    Total                      1.098ns (0.203ns logic, 0.895ns route)
-                                       (18.5% logic, 81.5% route)
+    Total                      1.059ns (0.203ns logic, 0.856ns route)
+                                       (19.2% logic, 80.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'save_button'
+  Total number of paths / destination ports: 296 / 16
+-------------------------------------------------------------------------
+Offset:              2.467ns (Levels of Logic = 5)
+  Source:            load_button (PAD)
+  Destination:       U2/reg_7 (FF)
+  Destination Clock: save_button rising
+
+  Data Path: load_button to U2/reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   0.001   0.753  load_button_IBUF (load_button_IBUF)
+     LUT6:I0->O            1   0.097   0.693  U1/U1/Mmux_p21_SW0 (N13)
+     LUT6:I0->O            5   0.097   0.314  U1/U3[1].G/U3/O1 (U1/carryOver<1>)
+     LUT5:I4->O            4   0.097   0.309  U1/U3[3].G/U3/O1 (U1/carryOver<3>)
+     LUT5:I4->O            4   0.097   0.000  U1/U3[5].G/U2/Mxor_S_xo<0>1 (tSum<5>)
+     FDE:D                     0.008          U2/reg_5
+    ----------------------------------------
+    Total                      2.467ns (0.397ns logic, 2.070ns route)
+                                       (16.1% logic, 83.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
-  Total number of paths / destination ports: 16 / 8
+  Total number of paths / destination ports: 289 / 10
 -------------------------------------------------------------------------
-Offset:              1.697ns (Levels of Logic = 3)
-  Source:            current_state_FSM_FFd2 (FF)
-  Destination:       Pout<5> (PAD)
+Offset:              3.181ns (Levels of Logic = 5)
+  Source:            current_state_FSM_FFd1 (FF)
+  Destination:       seg<6> (PAD)
   Source Clock:      Clk rising
 
-  Data Path: current_state_FSM_FFd2 to Pout<5>
+  Data Path: current_state_FSM_FFd1 to seg<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             13   0.361   0.567  current_state_FSM_FFd2 (current_state_FSM_FFd2)
-     LUT3:I0->O            1   0.097   0.295  Mmux_Pout6_SW0 (N4)
-     LUT6:I5->O            1   0.097   0.279  Mmux_Pout6 (Pout_5_OBUF)
-     OBUF:I->O                 0.000          Pout_5_OBUF (Pout<5>)
+     FDC:C->Q             18   0.361   0.762  current_state_FSM_FFd1 (current_state_FSM_FFd1)
+     LUT5:I0->O            1   0.097   0.295  U4/Mmux_currentNumber<1>13 (U4/Mmux_currentNumber<1>12)
+     LUT6:I5->O            1   0.097   0.511  U4/Mmux_currentNumber<1>14 (U4/Mmux_currentNumber<1>13)
+     LUT4:I1->O            7   0.097   0.584  U4/Mmux_currentNumber<1>15 (U4/currentNumber<1>)
+     LUT5:I1->O            1   0.097   0.279  U4/Mram_segNum61 (seg_6_OBUF)
+     OBUF:I->O                 0.000          seg_6_OBUF (seg<6>)
     ----------------------------------------
-    Total                      1.697ns (0.555ns logic, 1.142ns route)
-                                       (32.7% logic, 67.3% route)
+    Total                      3.181ns (0.749ns logic, 2.432ns route)
+                                       (23.5% logic, 76.5% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'current_state[1]_PWR_13_o_Mux_11_o'
-  Total number of paths / destination ports: 126 / 7
+Timing constraint: Default OFFSET OUT AFTER for Clock 'save_button'
+  Total number of paths / destination ports: 1344 / 7
 -------------------------------------------------------------------------
-Offset:              4.981ns (Levels of Logic = 8)
+Offset:              4.406ns (Levels of Logic = 7)
+  Source:            U2/reg_1 (FF)
+  Destination:       seg<2> (PAD)
+  Source Clock:      save_button rising
+
+  Data Path: U2/reg_1 to seg<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.361   0.383  U2/reg_1 (U2/reg_1)
+     LUT6:I4->O            5   0.097   0.530  U1/U3[1].G/U3/O1 (U1/carryOver<1>)
+     LUT5:I2->O            3   0.097   0.305  U1/U3[3].G/U2/Mxor_S_xo<0>1 (tSum<3>)
+     LUT6:I5->O            4   0.097   0.697  U3/Mmux_out_vector511 (U3/Mmux_out_vector51)
+     LUT6:I1->O            1   0.097   0.683  U4/Mmux_currentNumber<3>16 (U4/Mmux_currentNumber<3>15)
+     LUT6:I1->O            7   0.097   0.584  U4/Mmux_currentNumber<3>17 (U4/currentNumber<3>)
+     LUT5:I1->O            1   0.097   0.279  U4/Mram_segNum111 (seg_1_OBUF)
+     OBUF:I->O                 0.000          seg_1_OBUF (seg<1>)
+    ----------------------------------------
+    Total                      4.406ns (0.943ns logic, 3.463ns route)
+                                       (21.4% logic, 78.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'current_state[1]_PWR_15_o_Mux_11_o'
+  Total number of paths / destination ports: 1631 / 7
+-------------------------------------------------------------------------
+Offset:              5.486ns (Levels of Logic = 8)
   Source:            operation (LATCH)
-  Destination:       Pout<3> (PAD)
-  Source Clock:      current_state[1]_PWR_13_o_Mux_11_o falling
+  Destination:       seg<2> (PAD)
+  Source Clock:      current_state[1]_PWR_15_o_Mux_11_o falling
 
-  Data Path: operation to Pout<3>
+  Data Path: operation to seg<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               9   0.472   0.548  operation (operation)
-     LUT4:I1->O            2   0.097   0.688  U0/Mmux_out_vector31 (tB<2>)
-     LUT6:I1->O            4   0.097   0.393  U1/U2[2].G/U3/O1 (U1/carryOver<2>)
-     LUT5:I3->O            3   0.097   0.389  U1/U2[4].G/U3/O1 (U1/carryOver<4>)
-     LUT5:I3->O            1   0.097   0.295  U1/U2[6].G/U3/O1 (U1/carryOver<6>)
-     LUT3:I2->O            8   0.097   0.725  U1/U2[7].G/U2/Mxor_S_xo<0>1 (tSum<7>)
-     LUT6:I0->O            1   0.097   0.511  Mmux_Pout44_SW1 (N18)
-     LUT6:I3->O            1   0.097   0.279  Mmux_Pout44 (Pout_3_OBUF)
-     OBUF:I->O                 0.000          Pout_3_OBUF (Pout<3>)
+     LD:G->Q              12   0.472   0.562  operation (operation)
+     LUT6:I3->O            1   0.097   0.693  U1/U1/Mmux_p21_SW0 (N13)
+     LUT6:I0->O            5   0.097   0.530  U1/U3[1].G/U3/O1 (U1/carryOver<1>)
+     LUT5:I2->O            3   0.097   0.305  U1/U3[3].G/U2/Mxor_S_xo<0>1 (tSum<3>)
+     LUT6:I5->O            4   0.097   0.697  U3/Mmux_out_vector511 (U3/Mmux_out_vector51)
+     LUT6:I1->O            1   0.097   0.683  U4/Mmux_currentNumber<3>16 (U4/Mmux_currentNumber<3>15)
+     LUT6:I1->O            7   0.097   0.584  U4/Mmux_currentNumber<3>17 (U4/currentNumber<3>)
+     LUT5:I1->O            1   0.097   0.279  U4/Mram_segNum111 (seg_1_OBUF)
+     OBUF:I->O                 0.000          seg_1_OBUF (seg<1>)
     ----------------------------------------
-    Total                      4.981ns (1.151ns logic, 3.830ns route)
-                                       (23.1% logic, 76.9% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'current_state_FSM_FFd1'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              0.751ns (Levels of Logic = 1)
-  Source:            sign_res (LATCH)
-  Destination:       O (PAD)
-  Source Clock:      current_state_FSM_FFd1 falling
-
-  Data Path: sign_res to O
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.472   0.279  sign_res (sign_res)
-     OBUF:I->O                 0.000          O_OBUF (O)
-    ----------------------------------------
-    Total                      0.751ns (0.472ns logic, 0.279ns route)
-                                       (62.8% logic, 37.2% route)
+    Total                      5.486ns (1.151ns logic, 4.335ns route)
+                                       (21.0% logic, 79.0% route)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 720 / 8
+  Total number of paths / destination ports: 10206 / 7
 -------------------------------------------------------------------------
-Delay:               4.536ns (Levels of Logic = 9)
-  Source:            B<2> (PAD)
-  Destination:       Pout<3> (PAD)
+Delay:               5.206ns (Levels of Logic = 9)
+  Source:            load_button (PAD)
+  Destination:       seg<2> (PAD)
 
-  Data Path: B<2> to Pout<3>
+  Data Path: load_button to seg<2>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   0.001   0.575  B_2_IBUF (B_2_IBUF)
-     LUT4:I0->O            2   0.097   0.688  U0/Mmux_out_vector31 (tB<2>)
-     LUT6:I1->O            4   0.097   0.393  U1/U2[2].G/U3/O1 (U1/carryOver<2>)
-     LUT5:I3->O            3   0.097   0.389  U1/U2[4].G/U3/O1 (U1/carryOver<4>)
-     LUT5:I3->O            1   0.097   0.295  U1/U2[6].G/U3/O1 (U1/carryOver<6>)
-     LUT3:I2->O            8   0.097   0.725  U1/U2[7].G/U2/Mxor_S_xo<0>1 (tSum<7>)
-     LUT6:I0->O            1   0.097   0.511  Mmux_Pout44_SW1 (N18)
-     LUT6:I3->O            1   0.097   0.279  Mmux_Pout44 (Pout_3_OBUF)
-     OBUF:I->O                 0.000          Pout_3_OBUF (Pout<3>)
+     IBUF:I->O            14   0.001   0.753  load_button_IBUF (load_button_IBUF)
+     LUT6:I0->O            1   0.097   0.693  U1/U1/Mmux_p21_SW0 (N13)
+     LUT6:I0->O            5   0.097   0.530  U1/U3[1].G/U3/O1 (U1/carryOver<1>)
+     LUT5:I2->O            3   0.097   0.305  U1/U3[3].G/U2/Mxor_S_xo<0>1 (tSum<3>)
+     LUT6:I5->O            4   0.097   0.697  U3/Mmux_out_vector511 (U3/Mmux_out_vector51)
+     LUT6:I1->O            1   0.097   0.683  U4/Mmux_currentNumber<3>16 (U4/Mmux_currentNumber<3>15)
+     LUT6:I1->O            7   0.097   0.584  U4/Mmux_currentNumber<3>17 (U4/currentNumber<3>)
+     LUT5:I1->O            1   0.097   0.279  U4/Mram_segNum111 (seg_1_OBUF)
+     OBUF:I->O                 0.000          seg_1_OBUF (seg<1>)
     ----------------------------------------
-    Total                      4.536ns (0.680ns logic, 3.857ns route)
-                                       (15.0% logic, 85.0% route)
+    Total                      5.206ns (0.680ns logic, 4.526ns route)
+                                       (13.1% logic, 86.9% route)
 
 =========================================================================
 
@@ -592,36 +725,37 @@ Clock to Setup on destination clock Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    0.901|         |         |         |
+Clk            |    1.737|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock current_state[1]_PWR_13_o_Mux_11_o
+Clock to Setup on destination clock current_state[1]_PWR_15_o_Mux_11_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |         |         |    1.074|         |
+Clk            |         |         |    1.093|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock current_state_FSM_FFd1
+Clock to Setup on destination clock save_button
 ----------------------------------+---------+---------+---------+---------+
                                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------+---------+---------+---------+---------+
-current_state[1]_PWR_13_o_Mux_11_o|         |         |    3.271|         |
+current_state[1]_PWR_15_o_Mux_11_o|         |    2.746|         |         |
+save_button                       |    1.854|         |         |         |
 ----------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 24.71 secs
+Total CPU time to Xst completion: 24.84 secs
  
 --> 
 
-Total memory usage is 4640848 kilobytes
+Total memory usage is 4640852 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
 

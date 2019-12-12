@@ -1,0 +1,75 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Decider.twx Decider.ncd -o Decider.twr Decider.pcf
+
+Design file:              Decider.ncd
+Physical constraint file: Decider.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+B<0>           |Pout<0>        |    5.833|
+B<1>           |Pout<1>        |    5.534|
+B<2>           |Pout<2>        |    6.006|
+B<3>           |Pout<3>        |    5.464|
+B<4>           |Pout<4>        |    6.020|
+B<5>           |Pout<5>        |    5.504|
+B<6>           |Pout<6>        |    6.049|
+B<7>           |Pout<7>        |    5.491|
+Button         |Pout<0>        |    5.922|
+Button         |Pout<1>        |    5.751|
+Button         |Pout<2>        |    5.682|
+Button         |Pout<3>        |    5.502|
+Button         |Pout<4>        |    5.571|
+Button         |Pout<5>        |    5.386|
+Button         |Pout<6>        |    5.511|
+Button         |Pout<7>        |    5.340|
+Load<0>        |Pout<0>        |    5.442|
+Load<1>        |Pout<1>        |    5.286|
+Load<2>        |Pout<2>        |    5.417|
+Load<3>        |Pout<3>        |    5.557|
+Load<4>        |Pout<4>        |    5.402|
+Load<5>        |Pout<5>        |    5.543|
+Load<6>        |Pout<6>        |    5.421|
+Load<7>        |Pout<7>        |    5.512|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 12 10:21:34 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5002 MB
+
+
+

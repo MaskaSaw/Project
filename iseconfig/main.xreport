@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-12-11T06:52:49</DateModified>
-  <ModuleName>sSegDisplay</ModuleName>
+  <DateModified>2019-12-12T09:23:45</DateModified>
+  <ModuleName>main</ModuleName>
   <SummaryTimeStamp>2019-12-11T01:13:44</SummaryTimeStamp>
-  <SavedFilePath>C:/dd/Lab2Dop/iseconfig/main.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/dd/Lab2Dop\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Maska_O/Documents/GitHub/Project/iseconfig/main.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Maska_O/Documents/GitHub/Project\</ImplementationReportsDirectory>
   <DateInitialized>2019-12-11T06:52:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

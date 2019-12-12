@@ -1,4 +1,3 @@
-----------------------------------------------------------------------------------
 -- Company: 
 -- Engineer: 
 -- 
@@ -34,16 +33,17 @@ entity sSegDisplay is
 	port ( 
 		clk : in std_logic;
 		number : in  std_logic_vector(7 downto 0);
+		minus : in std_logic;
 		seg : out std_logic_vector(6 downto 0);
-		an : out std_logic_vector(5 downto 0));
+		an : out std_logic_vector(7 downto 0));
 	
 end sSegDisplay;
 
 architecture Behavioral of sSegDisplay is
-	signal counter: std_logic_vector(2 downto 0) := "000";
+	signal counter: std_logic_vector(12 downto 0) := (others => '0');
 	signal currentNumber: std_logic_vector(4 downto 0);
 	signal segNum: std_logic_vector(6 downto 0);
-	signal intAn: std_logic_vector(5 downto 0);
+	signal intAn: std_logic_vector(7 downto 0);
 begin
 	an <= intAn;
 	seg <= segNum;
@@ -52,18 +52,16 @@ begin
 	begin
 		if rising_edge(clk) then
 			counter <= counter + '1';		
-			if counter = "100" then
-				counter <= "000";
-			end if;
 		end if;
 	end process;
 	
-	numberPosition: process(counter, number)
+	numberPosition: process(counter, number, minus)
 	begin
-		case counter is
-			when "000" => currentNumber <= "0" & number(3 downto 0);
-			when "010" => currentNumber <= "00" & number(6 downto 4);
-			when "011" => currentNumber <= number(7) & "0000";
+		case counter(12 downto 10) is
+			when "001" => 
+				currentNumber <= "0" & number(3 downto 0);
+			when "010" => currentNumber <= "0" & number(7 downto 4);
+			when "011" => currentNumber <= minus & "0000";
 			when others => currentNumber <= "11111";
 		end case;
 	end process;
@@ -80,6 +78,12 @@ begin
 		constant codeSeven : std_logic_vector(6 downto 0) := "0001111";
 		constant codeEight : std_logic_vector(6 downto 0) := "0000000";
 		constant codeNine : std_logic_vector(6 downto 0)  := "0000100";
+		constant codeA : std_logic_vector(6 downto 0)     := "0000010";
+		constant codeB : std_logic_vector(6 downto 0)     := "1100000";
+		constant codeC : std_logic_vector(6 downto 0)     := "0110001";
+		constant codeD : std_logic_vector(6 downto 0)     := "1000010";
+		constant codeE : std_logic_vector(6 downto 0)     := "0110000";
+		constant codeF : std_logic_vector(6 downto 0)     := "0111000";
 		constant codeNone : std_logic_vector(6 downto 0)  := "1111111";
 	begin
 		case currentNumber is
@@ -93,24 +97,21 @@ begin
 			when "00111" => segNum <= codeSeven;
 			when "01000" => segNum <= codeEight;
 			when "01001" => segNum <= codeNine;
+			when "01010" => segNum <= codeA;
+			when "01011" => segNum <= codeB;
+			when "01100" => segNum <= codeC;
+			when "01101" => segNum <= codeD;
+			when "01110" => segNum <= codeE;
+			when "01111" => segNum <= codeF;
 			when "10000" => segNum <= codeMinus;
 			when others => segNum <= codeNone;
 		end case;
 	end process;
 	
-	with counter select  
+	with counter(12 downto 10) select  
 		intAn <=
-			"111110" when "000",
-			"111101" when "001",
-			"111011" when "010",
-			"110111" when "011",
-			"101111" when "100",
-			"011111" when "101",
-			"111111" when others;
-	
-	
-	
-	
-	
+			"11111110" when "001",
+			"11111101" when "010",
+			"11111011" when "011",
+			"11111111" when others;
 end Behavioral;
-

@@ -11,18 +11,28 @@ entity main is
            rst_button : in  STD_LOGIC;
            back_button : in  STD_LOGIC;
            res_button : in  STD_LOGIC;
-			  load_button : in STD_LOGIC;
+			  load_button : in  STD_LOGIC;
 			  save_button : in STD_LOGIC;
-           Pout : out  STD_LOGIC_VECTOR (n-1 downto 0);
-			  O : out  STD_LOGIC);
+			  seg : out std_logic_vector(6 downto 0);
+			  an : out std_logic_vector(7 downto 0));
 end main;
 
 architecture Behavioral of main is
+	component sSegDisplay
+		port (
+			clk : in std_logic;
+			number : in  std_logic_vector(7 downto 0);
+			minus : in std_logic;
+			seg : out std_logic_vector(6 downto 0);
+			an : out std_logic_vector(7 downto 0));
+	end component;
 
 	component nAdder
 		Generic (n : integer);
 		Port ( A : in  STD_LOGIC_VECTOR(n-1 downto 0);
 				 B : in  STD_LOGIC_VECTOR(n-1 downto 0);
+				 L : in  STD_LOGIC_VECTOR(n-1 downto 0);
+				 D : in STD_LOGIC;
 				 S : out  STD_LOGIC_VECTOR(n-1 downto 0);
 				 CO : out  STD_LOGIC
 		);
@@ -47,23 +57,25 @@ architecture Behavioral of main is
 	type states is (S0, S1, S2);
 	signal current_state, next_state: states := S0;
 	signal operation: std_logic := '0';
-	signal result, sum, preRes, load: std_logic_vector(n-1 downto 0);
-	signal tB, tSum : std_logic_vector(n-1 downto 0);
-	signal over, sign_res, sign_load, sign_save : std_logic := '0';
+	signal result, sum, preRes: std_logic_vector(n-1 downto 0);
+	signal tB, tSum, load : std_logic_vector(n-1 downto 0);
+	signal over, sign_res : std_logic := '0';
 begin
 	
 	U0: codeConverter Generic map (n => n)
 		Port map(sign => operation, in_vector => B, out_vector => tB);
 	
 	U1: nAdder Generic map (n => n) 
-		Port map (A => A, B => tB, S => tSum, CO => over);
+		Port map (A => A, B => tB, L => load, D => load_button, S => tSum, CO => over);
 		
 	U2: SyncRegister Generic map (n => n)
-		Port map (Din => tSum, CE => save_button, C => Clk, Dout => load);
+		Port map (Din => tSum, CE => Clk, C => save_button, Dout => load);
 			
 	U3: codeConverter Generic map (n => n)
 		Port map(sign => tSum(n-1), in_vector => tSum, out_vector => preRes);
 		
+	U4: sSegDisplay port map (Clk, result, sign_res, seg, an);
+	
 	FSM_dff: process(Clk, next_state, Rst)
 	begin
 		if Rst = '1' then 
@@ -73,7 +85,7 @@ begin
 		end if;
 	end process;
 	
-	FSM_gamma: process(current_state, add_button, diff_button, rst_button, back_button, res_button, load_button)
+	FSM_gamma: process(current_state, add_button, diff_button, rst_button, back_button, res_button)
 	begin
 		case current_state is
 			when S0 => if add_button = '1' then
@@ -93,9 +105,6 @@ begin
 							elsif rst_button = '1' then
 								next_state <= S0;
 								operation <= '0';
-							--elsif load_button = '1' then
-								--next_state <= s1;
-								--tB <= load;
 							else
 								next_state <= S1;
 							end if;
@@ -114,14 +123,17 @@ begin
 	FSM_phi: process(current_state, A, B)
 	begin
 		case current_state is
-			when S0 => result <= A;
-			when S1 => result <= B;
-			when S2 => result <= preRes;
-						  sign_res <= tsum(n-1);
+			when S0 =>
+				sign_res <= '0';
+				result <= A;
+			when S1 => 
+				result <= B;
+				sign_res <= '0';
+			when S2 => 
+				result <= preRes;
+				sign_res <= tsum(n-1);
 		end case;
 	end process;
-	
-	Pout <= result;
-	O <= sign_res;
+ 
 end Behavioral;
 

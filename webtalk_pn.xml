@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Thu Dec 12 01:00:43 2019">
+<application name="pn" timeStamp="Thu Dec 12 11:47:21 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="D7B5C1E95F114C058EA6083707E860BD" type="project"/>
-<property name="ProjectIteration" value="4" type="project"/>
-<property name="ProjectFile" value="C:/Study/POCP/Project/Lab2Dop.xise" type="project"/>
+<property name="ProjectIteration" value="7" type="project"/>
+<property name="ProjectFile" value="C:/Users/Maska_O/Documents/GitHub/Project/Lab2Dop.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2019-11-26T22:22:00" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -25,9 +25,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2019-11-26T22:22:00" type="design"/>
 <property name="PROP_intWbtProjectID" value="D7B5C1E95F114C058EA6083707E860BD" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="4" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="7" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
+<property name="PROP_lockPinsUcfFile" value="changed" type="process"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.sSegDisplayTest" type="process"/>
 <property name="PROP_AutoTop" value="false" type="design"/>
 <property name="PROP_DevFamily" value="Artix7" type="design"/>
@@ -37,7 +38,8 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
 <property name="PROP_DevSpeed" value="-3" type="design"/>
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
-<property name="FILE_VHDL" value="14" type="source"/>
+<property name="FILE_UCF" value="2" type="source"/>
+<property name="FILE_VHDL" value="15" type="source"/>
 </section>
 </application>
 </document>
