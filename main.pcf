@@ -1,4 +1,44 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Dec 12 11:47:16 2019
+// Written by: Map P.20131013 on Thu Dec 12 14:04:06 2019
 //! **************************************************************************
+
+SCHEMATIC START;
+COMP "an<0>" LOCATE = SITE "N6" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "M6" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "M3" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "N5" LEVEL 1;
+COMP "A<0>" LOCATE = SITE "U9" LEVEL 1;
+COMP "an<4>" LOCATE = SITE "N2" LEVEL 1;
+COMP "A<1>" LOCATE = SITE "U8" LEVEL 1;
+COMP "an<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "A<2>" LOCATE = SITE "R7" LEVEL 1;
+COMP "an<6>" LOCATE = SITE "L1" LEVEL 1;
+COMP "A<3>" LOCATE = SITE "R6" LEVEL 1;
+COMP "an<7>" LOCATE = SITE "M1" LEVEL 1;
+COMP "B<0>" LOCATE = SITE "U4" LEVEL 1;
+COMP "A<4>" LOCATE = SITE "R5" LEVEL 1;
+COMP "B<1>" LOCATE = SITE "V2" LEVEL 1;
+COMP "A<5>" LOCATE = SITE "V7" LEVEL 1;
+COMP "B<2>" LOCATE = SITE "U2" LEVEL 1;
+COMP "A<6>" LOCATE = SITE "V6" LEVEL 1;
+COMP "B<3>" LOCATE = SITE "T3" LEVEL 1;
+COMP "A<7>" LOCATE = SITE "V5" LEVEL 1;
+COMP "rst_button" LOCATE = SITE "F15" LEVEL 1;
+COMP "B<4>" LOCATE = SITE "T1" LEVEL 1;
+COMP "B<5>" LOCATE = SITE "R3" LEVEL 1;
+COMP "B<6>" LOCATE = SITE "P3" LEVEL 1;
+COMP "B<7>" LOCATE = SITE "P4" LEVEL 1;
+COMP "res_button" LOCATE = SITE "E16" LEVEL 1;
+COMP "seg<0>" LOCATE = SITE "L6" LEVEL 1;
+COMP "seg<1>" LOCATE = SITE "M2" LEVEL 1;
+COMP "seg<2>" LOCATE = SITE "K3" LEVEL 1;
+COMP "seg<3>" LOCATE = SITE "L4" LEVEL 1;
+COMP "seg<4>" LOCATE = SITE "L5" LEVEL 1;
+COMP "seg<5>" LOCATE = SITE "N1" LEVEL 1;
+COMP "seg<6>" LOCATE = SITE "L3" LEVEL 1;
+COMP "back_button" LOCATE = SITE "V10" LEVEL 1;
+COMP "add_button" LOCATE = SITE "T16" LEVEL 1;
+COMP "diff_button" LOCATE = SITE "R10" LEVEL 1;
+COMP "Clk" LOCATE = SITE "E3" LEVEL 1;
+SCHEMATIC END;
 

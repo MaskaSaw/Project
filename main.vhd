@@ -11,8 +11,6 @@ entity main is
            rst_button : in  STD_LOGIC;
            back_button : in  STD_LOGIC;
            res_button : in  STD_LOGIC;
-			  load_button : in  STD_LOGIC;
-			  save_button : in STD_LOGIC;
 			  seg : out std_logic_vector(6 downto 0);
 			  an : out std_logic_vector(7 downto 0));
 end main;
@@ -31,19 +29,9 @@ architecture Behavioral of main is
 		Generic (n : integer);
 		Port ( A : in  STD_LOGIC_VECTOR(n-1 downto 0);
 				 B : in  STD_LOGIC_VECTOR(n-1 downto 0);
-				 L : in  STD_LOGIC_VECTOR(n-1 downto 0);
-				 D : in STD_LOGIC;
 				 S : out  STD_LOGIC_VECTOR(n-1 downto 0);
 				 CO : out  STD_LOGIC
 		);
-	end component;
-	
-	component SyncRegister
-		Generic (n : integer);
-		Port ( Din : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           CE : in  STD_LOGIC;
-           C : in  STD_LOGIC;
-           Dout : out  STD_LOGIC_VECTOR (N-1 downto 0));
 	end component;
 	
 	component codeConverter
@@ -58,7 +46,7 @@ architecture Behavioral of main is
 	signal current_state, next_state: states := S0;
 	signal operation: std_logic := '0';
 	signal result, sum, preRes: std_logic_vector(n-1 downto 0);
-	signal tB, tSum, load : std_logic_vector(n-1 downto 0);
+	signal tB, tSum : std_logic_vector(n-1 downto 0);
 	signal over, sign_res : std_logic := '0';
 begin
 	
@@ -66,10 +54,7 @@ begin
 		Port map(sign => operation, in_vector => B, out_vector => tB);
 	
 	U1: nAdder Generic map (n => n) 
-		Port map (A => A, B => tB, L => load, D => load_button, S => tSum, CO => over);
-		
-	U2: SyncRegister Generic map (n => n)
-		Port map (Din => tSum, CE => Clk, C => save_button, Dout => load);
+		Port map (A => A, B => tB, S => tSum, CO => over);
 			
 	U3: codeConverter Generic map (n => n)
 		Port map(sign => tSum(n-1), in_vector => tSum, out_vector => preRes);
@@ -136,4 +121,3 @@ begin
 	end process;
  
 end Behavioral;
-

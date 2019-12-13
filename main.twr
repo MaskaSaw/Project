@@ -31,53 +31,21 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Setup/Hold to clock Clk
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-Rst         |   -0.497(R)|      FAST  |    2.271(R)|      SLOW  |Clk_IBUF_BUFG     |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
-
-Setup/Hold to clock save_button
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-A<0>        |    0.682(R)|      FAST  |    1.987(R)|      SLOW  |save_button_BUFGP |   0.000|
-A<1>        |    0.694(R)|      FAST  |    2.200(R)|      SLOW  |save_button_BUFGP |   0.000|
-A<2>        |    0.258(R)|      FAST  |    1.790(R)|      SLOW  |save_button_BUFGP |   0.000|
-A<3>        |   -0.043(R)|      FAST  |    2.032(R)|      SLOW  |save_button_BUFGP |   0.000|
-A<4>        |   -0.178(R)|      FAST  |    2.086(R)|      SLOW  |save_button_BUFGP |   0.000|
-A<5>        |    0.005(R)|      FAST  |    2.119(R)|      SLOW  |save_button_BUFGP |   0.000|
-A<6>        |    0.339(R)|      FAST  |    1.994(R)|      SLOW  |save_button_BUFGP |   0.000|
-A<7>        |    0.126(R)|      FAST  |    1.827(R)|      SLOW  |save_button_BUFGP |   0.000|
-B<0>        |    0.753(R)|      FAST  |    2.180(R)|      SLOW  |save_button_BUFGP |   0.000|
-B<1>        |    0.753(R)|      FAST  |    1.907(R)|      SLOW  |save_button_BUFGP |   0.000|
-B<2>        |    0.544(R)|      FAST  |    1.948(R)|      SLOW  |save_button_BUFGP |   0.000|
-B<3>        |    0.552(R)|      FAST  |    2.175(R)|      SLOW  |save_button_BUFGP |   0.000|
-B<4>        |    0.520(R)|      FAST  |    1.898(R)|      SLOW  |save_button_BUFGP |   0.000|
-B<5>        |    0.555(R)|      FAST  |    1.944(R)|      SLOW  |save_button_BUFGP |   0.000|
-B<6>        |    0.545(R)|      FAST  |    1.728(R)|      SLOW  |save_button_BUFGP |   0.000|
-B<7>        |    0.175(R)|      FAST  |    1.513(R)|      SLOW  |save_button_BUFGP |   0.000|
-load_button |    0.834(R)|      FAST  |    2.041(R)|      SLOW  |save_button_BUFGP |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
-
 Clock Clk to Pad
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-an<0>       |         8.579(R)|      SLOW  |         3.456(R)|      FAST  |Clk_IBUF_BUFG     |   0.000|
-an<1>       |         8.446(R)|      SLOW  |         3.381(R)|      FAST  |Clk_IBUF_BUFG     |   0.000|
-an<2>       |         8.671(R)|      SLOW  |         3.603(R)|      FAST  |Clk_IBUF_BUFG     |   0.000|
-seg<0>      |        10.874(R)|      SLOW  |         3.666(R)|      FAST  |Clk_IBUF_BUFG     |   0.000|
-seg<1>      |        10.859(R)|      SLOW  |         3.683(R)|      FAST  |Clk_IBUF_BUFG     |   0.000|
-seg<2>      |        11.022(R)|      SLOW  |         3.714(R)|      FAST  |Clk_IBUF_BUFG     |   0.000|
-seg<3>      |        10.611(R)|      SLOW  |         3.453(R)|      FAST  |Clk_IBUF_BUFG     |   0.000|
-seg<4>      |        11.125(R)|      SLOW  |         3.774(R)|      FAST  |Clk_IBUF_BUFG     |   0.000|
-seg<5>      |        10.876(R)|      SLOW  |         3.595(R)|      FAST  |Clk_IBUF_BUFG     |   0.000|
-seg<6>      |        10.513(R)|      SLOW  |         3.664(R)|      FAST  |Clk_IBUF_BUFG     |   0.000|
+an<0>       |        10.431(R)|      SLOW  |         3.808(R)|      FAST  |Clk_BUFGP         |   0.000|
+an<1>       |        10.183(R)|      SLOW  |         3.695(R)|      FAST  |Clk_BUFGP         |   0.000|
+an<2>       |        10.203(R)|      SLOW  |         3.745(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<0>      |        13.569(R)|      SLOW  |         3.923(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<1>      |        13.477(R)|      SLOW  |         3.892(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<2>      |        13.575(R)|      SLOW  |         3.942(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<3>      |        13.550(R)|      SLOW  |         3.795(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<4>      |        13.552(R)|      SLOW  |         3.912(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<5>      |        13.863(R)|      SLOW  |         3.960(R)|      FAST  |Clk_BUFGP         |   0.000|
+seg<6>      |        13.476(R)|      SLOW  |         3.827(R)|      FAST  |Clk_BUFGP         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock add_button to Pad
@@ -85,13 +53,13 @@ Clock add_button to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                 | Phase  |
 ------------+-----------------+------------+-----------------+------------+----------------------------------+--------+
-seg<0>      |        12.447(F)|      SLOW  |         4.297(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<1>      |        12.425(F)|      SLOW  |         4.309(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<2>      |        12.392(F)|      SLOW  |         4.275(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<3>      |        11.908(F)|      SLOW  |         4.146(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<4>      |        12.507(F)|      SLOW  |         4.337(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<5>      |        12.173(F)|      SLOW  |         4.284(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<6>      |        12.322(F)|      SLOW  |         4.163(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
+seg<0>      |        16.111(F)|      SLOW  |         5.542(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<1>      |        16.007(F)|      SLOW  |         5.514(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<2>      |        16.110(F)|      SLOW  |         5.565(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<3>      |        16.229(F)|      SLOW  |         5.534(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<4>      |        16.100(F)|      SLOW  |         5.531(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<5>      |        16.542(F)|      SLOW  |         5.695(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<6>      |        16.063(F)|      SLOW  |         5.567(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
 ------------+-----------------+------------+-----------------+------------+----------------------------------+--------+
 
 Clock back_button to Pad
@@ -99,13 +67,13 @@ Clock back_button to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                 | Phase  |
 ------------+-----------------+------------+-----------------+------------+----------------------------------+--------+
-seg<0>      |        12.088(F)|      SLOW  |         4.153(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<1>      |        12.066(F)|      SLOW  |         4.165(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<2>      |        12.033(F)|      SLOW  |         4.131(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<3>      |        11.549(F)|      SLOW  |         4.002(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<4>      |        12.148(F)|      SLOW  |         4.193(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<5>      |        11.814(F)|      SLOW  |         4.140(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<6>      |        11.963(F)|      SLOW  |         4.019(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
+seg<0>      |        15.838(F)|      SLOW  |         5.444(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<1>      |        15.734(F)|      SLOW  |         5.416(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<2>      |        15.837(F)|      SLOW  |         5.467(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<3>      |        15.956(F)|      SLOW  |         5.436(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<4>      |        15.827(F)|      SLOW  |         5.433(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<5>      |        16.269(F)|      SLOW  |         5.597(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<6>      |        15.790(F)|      SLOW  |         5.469(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
 ------------+-----------------+------------+-----------------+------------+----------------------------------+--------+
 
 Clock diff_button to Pad
@@ -113,13 +81,13 @@ Clock diff_button to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                 | Phase  |
 ------------+-----------------+------------+-----------------+------------+----------------------------------+--------+
-seg<0>      |        12.322(F)|      SLOW  |         4.260(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<1>      |        12.300(F)|      SLOW  |         4.272(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<2>      |        12.267(F)|      SLOW  |         4.238(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<3>      |        11.783(F)|      SLOW  |         4.109(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<4>      |        12.382(F)|      SLOW  |         4.300(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<5>      |        12.048(F)|      SLOW  |         4.247(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<6>      |        12.197(F)|      SLOW  |         4.126(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
+seg<0>      |        16.265(F)|      SLOW  |         5.612(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<1>      |        16.161(F)|      SLOW  |         5.584(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<2>      |        16.264(F)|      SLOW  |         5.635(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<3>      |        16.383(F)|      SLOW  |         5.604(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<4>      |        16.254(F)|      SLOW  |         5.601(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<5>      |        16.696(F)|      SLOW  |         5.765(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<6>      |        16.217(F)|      SLOW  |         5.637(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
 ------------+-----------------+------------+-----------------+------------+----------------------------------+--------+
 
 Clock res_button to Pad
@@ -127,13 +95,13 @@ Clock res_button to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                 | Phase  |
 ------------+-----------------+------------+-----------------+------------+----------------------------------+--------+
-seg<0>      |        11.691(F)|      SLOW  |         3.978(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<1>      |        11.669(F)|      SLOW  |         3.990(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<2>      |        11.636(F)|      SLOW  |         3.956(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<3>      |        11.152(F)|      SLOW  |         3.827(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<4>      |        11.751(F)|      SLOW  |         4.018(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<5>      |        11.417(F)|      SLOW  |         3.965(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<6>      |        11.566(F)|      SLOW  |         3.844(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
+seg<0>      |        15.925(F)|      SLOW  |         5.439(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<1>      |        15.821(F)|      SLOW  |         5.411(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<2>      |        15.924(F)|      SLOW  |         5.462(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<3>      |        16.043(F)|      SLOW  |         5.431(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<4>      |        15.914(F)|      SLOW  |         5.428(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<5>      |        16.356(F)|      SLOW  |         5.592(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<6>      |        15.877(F)|      SLOW  |         5.464(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
 ------------+-----------------+------------+-----------------+------------+----------------------------------+--------+
 
 Clock rst_button to Pad
@@ -141,40 +109,26 @@ Clock rst_button to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                 | Phase  |
 ------------+-----------------+------------+-----------------+------------+----------------------------------+--------+
-seg<0>      |        12.102(F)|      SLOW  |         4.160(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<1>      |        12.080(F)|      SLOW  |         4.172(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<2>      |        12.047(F)|      SLOW  |         4.138(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<3>      |        11.563(F)|      SLOW  |         4.009(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<4>      |        12.162(F)|      SLOW  |         4.200(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<5>      |        11.828(F)|      SLOW  |         4.147(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
-seg<6>      |        11.977(F)|      SLOW  |         4.026(F)|      FAST  |current_state[1]_PWR_15_o_Mux_11_o|   0.000|
+seg<0>      |        16.367(F)|      SLOW  |         5.652(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<1>      |        16.263(F)|      SLOW  |         5.624(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<2>      |        16.366(F)|      SLOW  |         5.675(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<3>      |        16.485(F)|      SLOW  |         5.644(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<4>      |        16.356(F)|      SLOW  |         5.641(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<5>      |        16.798(F)|      SLOW  |         5.805(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
+seg<6>      |        16.319(F)|      SLOW  |         5.677(F)|      FAST  |current_state[1]_PWR_12_o_Mux_11_o|   0.000|
 ------------+-----------------+------------+-----------------+------------+----------------------------------+--------+
-
-Clock save_button to Pad
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
-Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-seg<0>      |        11.798(R)|      SLOW  |         4.039(R)|      FAST  |save_button_BUFGP |   0.000|
-seg<1>      |        11.776(R)|      SLOW  |         4.056(R)|      FAST  |save_button_BUFGP |   0.000|
-seg<2>      |        11.743(R)|      SLOW  |         4.135(R)|      FAST  |save_button_BUFGP |   0.000|
-seg<3>      |        11.259(R)|      SLOW  |         4.060(R)|      FAST  |save_button_BUFGP |   0.000|
-seg<4>      |        11.858(R)|      SLOW  |         4.197(R)|      FAST  |save_button_BUFGP |   0.000|
-seg<5>      |        11.524(R)|      SLOW  |         4.196(R)|      FAST  |save_button_BUFGP |   0.000|
-seg<6>      |        11.673(R)|      SLOW  |         4.116(R)|      FAST  |save_button_BUFGP |   0.000|
-------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Clk
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    1.519|         |         |         |
-add_button     |   -0.242|   -0.242|         |         |
-back_button    |   -0.490|   -0.490|         |         |
-diff_button    |   -0.289|   -0.289|         |         |
-res_button     |   -0.312|   -0.312|         |         |
-rst_button     |   -0.385|   -0.385|         |         |
+Clk            |    1.560|         |         |         |
+add_button     |    0.423|    0.423|         |         |
+back_button    |    0.407|    0.407|         |         |
+diff_button    |    0.511|    0.511|         |         |
+res_button     |    0.558|    0.558|         |         |
+rst_button     |    0.672|    0.672|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock add_button
@@ -182,9 +136,9 @@ Clock to Setup on destination clock add_button
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |         |         |    2.801|         |
-add_button     |         |         |   -0.152|   -0.152|
-back_button    |         |         |   -0.041|   -0.041|
+Clk            |         |         |    1.396|         |
+add_button     |         |         |   -0.137|   -0.137|
+back_button    |         |         |   -0.029|   -0.029|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock back_button
@@ -192,9 +146,9 @@ Clock to Setup on destination clock back_button
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |         |         |    2.801|         |
-add_button     |         |         |   -0.008|   -0.008|
-back_button    |         |         |    0.103|    0.103|
+Clk            |         |         |    1.396|         |
+add_button     |         |         |   -0.039|   -0.039|
+back_button    |         |         |    0.069|    0.069|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock diff_button
@@ -202,9 +156,9 @@ Clock to Setup on destination clock diff_button
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |         |         |    2.801|         |
-add_button     |         |         |   -0.115|   -0.115|
-back_button    |         |         |   -0.004|   -0.004|
+Clk            |         |         |    1.396|         |
+add_button     |         |         |   -0.207|   -0.207|
+back_button    |         |         |   -0.099|   -0.099|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock res_button
@@ -212,9 +166,9 @@ Clock to Setup on destination clock res_button
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |         |         |    2.801|         |
-add_button     |         |         |    0.187|    0.187|
-back_button    |         |         |    0.344|    0.344|
+Clk            |         |         |    1.396|         |
+add_button     |         |         |   -0.034|   -0.034|
+back_button    |         |         |    0.074|    0.074|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock rst_button
@@ -222,159 +176,138 @@ Clock to Setup on destination clock rst_button
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |         |         |    2.801|         |
-add_button     |         |         |   -0.015|   -0.015|
-back_button    |         |         |    0.096|    0.096|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock save_button
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-Clk            |    0.211|    0.211|         |         |
-add_button     |         |    2.788|         |         |
-back_button    |         |    2.788|         |         |
-diff_button    |         |    2.788|         |         |
-res_button     |         |    2.788|         |         |
-rst_button     |         |    2.788|         |         |
-save_button    |    1.824|         |         |         |
+Clk            |         |         |    1.396|         |
+add_button     |         |         |   -0.247|   -0.247|
+back_button    |         |         |   -0.139|   -0.139|
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-A<0>           |seg<0>         |   10.024|
-A<0>           |seg<1>         |   10.002|
-A<0>           |seg<2>         |    9.969|
-A<0>           |seg<3>         |    9.485|
-A<0>           |seg<4>         |   10.084|
-A<0>           |seg<5>         |    9.750|
-A<0>           |seg<6>         |    9.899|
-A<1>           |seg<0>         |   10.053|
-A<1>           |seg<1>         |   10.031|
-A<1>           |seg<2>         |    9.998|
-A<1>           |seg<3>         |    9.514|
-A<1>           |seg<4>         |   10.113|
-A<1>           |seg<5>         |    9.779|
-A<1>           |seg<6>         |    9.928|
-A<2>           |seg<0>         |    9.153|
-A<2>           |seg<1>         |    9.131|
-A<2>           |seg<2>         |    9.098|
-A<2>           |seg<3>         |    8.614|
-A<2>           |seg<4>         |    9.213|
-A<2>           |seg<5>         |    8.879|
-A<2>           |seg<6>         |    9.028|
-A<3>           |seg<0>         |    8.837|
-A<3>           |seg<1>         |    8.815|
-A<3>           |seg<2>         |    8.782|
-A<3>           |seg<3>         |    8.298|
-A<3>           |seg<4>         |    8.897|
-A<3>           |seg<5>         |    8.563|
-A<3>           |seg<6>         |    8.712|
-A<4>           |seg<0>         |    8.564|
-A<4>           |seg<1>         |    8.542|
-A<4>           |seg<2>         |    8.509|
-A<4>           |seg<3>         |    8.025|
-A<4>           |seg<4>         |    8.624|
-A<4>           |seg<5>         |    8.290|
-A<4>           |seg<6>         |    8.439|
-A<5>           |seg<0>         |    8.937|
-A<5>           |seg<1>         |    8.915|
-A<5>           |seg<2>         |    8.882|
-A<5>           |seg<3>         |    8.398|
-A<5>           |seg<4>         |    8.997|
-A<5>           |seg<5>         |    8.663|
-A<5>           |seg<6>         |    8.812|
-A<6>           |seg<0>         |    9.140|
-A<6>           |seg<1>         |    9.118|
-A<6>           |seg<2>         |    9.085|
-A<6>           |seg<3>         |    8.621|
-A<6>           |seg<4>         |    9.200|
-A<6>           |seg<5>         |    8.886|
-A<6>           |seg<6>         |    9.015|
-A<7>           |seg<0>         |    9.177|
-A<7>           |seg<1>         |    9.155|
-A<7>           |seg<2>         |    9.122|
-A<7>           |seg<3>         |    8.638|
-A<7>           |seg<4>         |    9.237|
-A<7>           |seg<5>         |    8.903|
-A<7>           |seg<6>         |    9.052|
-B<0>           |seg<0>         |   10.165|
-B<0>           |seg<1>         |   10.143|
-B<0>           |seg<2>         |   10.110|
-B<0>           |seg<3>         |    9.626|
-B<0>           |seg<4>         |   10.225|
-B<0>           |seg<5>         |    9.891|
-B<0>           |seg<6>         |   10.040|
-B<1>           |seg<0>         |   10.174|
-B<1>           |seg<1>         |   10.152|
-B<1>           |seg<2>         |   10.119|
-B<1>           |seg<3>         |    9.635|
-B<1>           |seg<4>         |   10.234|
-B<1>           |seg<5>         |    9.900|
-B<1>           |seg<6>         |   10.049|
-B<2>           |seg<0>         |    9.826|
-B<2>           |seg<1>         |    9.804|
-B<2>           |seg<2>         |    9.771|
-B<2>           |seg<3>         |    9.287|
-B<2>           |seg<4>         |    9.886|
-B<2>           |seg<5>         |    9.552|
-B<2>           |seg<6>         |    9.701|
-B<3>           |seg<0>         |    9.845|
-B<3>           |seg<1>         |    9.823|
-B<3>           |seg<2>         |    9.790|
-B<3>           |seg<3>         |    9.306|
-B<3>           |seg<4>         |    9.905|
-B<3>           |seg<5>         |    9.571|
-B<3>           |seg<6>         |    9.720|
-B<4>           |seg<0>         |    9.762|
-B<4>           |seg<1>         |    9.740|
-B<4>           |seg<2>         |    9.707|
-B<4>           |seg<3>         |    9.223|
-B<4>           |seg<4>         |    9.822|
-B<4>           |seg<5>         |    9.488|
-B<4>           |seg<6>         |    9.637|
-B<5>           |seg<0>         |    9.822|
-B<5>           |seg<1>         |    9.800|
-B<5>           |seg<2>         |    9.767|
-B<5>           |seg<3>         |    9.283|
-B<5>           |seg<4>         |    9.882|
-B<5>           |seg<5>         |    9.548|
-B<5>           |seg<6>         |    9.697|
-B<6>           |seg<0>         |    9.730|
-B<6>           |seg<1>         |    9.708|
-B<6>           |seg<2>         |    9.675|
-B<6>           |seg<3>         |    9.191|
-B<6>           |seg<4>         |    9.790|
-B<6>           |seg<5>         |    9.456|
-B<6>           |seg<6>         |    9.605|
-B<7>           |seg<0>         |    9.126|
-B<7>           |seg<1>         |    9.104|
-B<7>           |seg<2>         |    9.071|
-B<7>           |seg<3>         |    8.587|
-B<7>           |seg<4>         |    9.186|
-B<7>           |seg<5>         |    8.852|
-B<7>           |seg<6>         |    9.001|
-load_button    |seg<0>         |   10.321|
-load_button    |seg<1>         |   10.299|
-load_button    |seg<2>         |   10.266|
-load_button    |seg<3>         |    9.782|
-load_button    |seg<4>         |   10.381|
-load_button    |seg<5>         |   10.047|
-load_button    |seg<6>         |   10.196|
+A<0>           |seg<0>         |   11.771|
+A<0>           |seg<1>         |   11.667|
+A<0>           |seg<2>         |   11.770|
+A<0>           |seg<3>         |   11.889|
+A<0>           |seg<4>         |   11.760|
+A<0>           |seg<5>         |   12.202|
+A<0>           |seg<6>         |   11.723|
+A<1>           |seg<0>         |   11.898|
+A<1>           |seg<1>         |   11.794|
+A<1>           |seg<2>         |   11.897|
+A<1>           |seg<3>         |   12.016|
+A<1>           |seg<4>         |   11.887|
+A<1>           |seg<5>         |   12.329|
+A<1>           |seg<6>         |   11.850|
+A<2>           |seg<0>         |   11.687|
+A<2>           |seg<1>         |   11.583|
+A<2>           |seg<2>         |   11.686|
+A<2>           |seg<3>         |   11.805|
+A<2>           |seg<4>         |   11.676|
+A<2>           |seg<5>         |   12.118|
+A<2>           |seg<6>         |   11.639|
+A<3>           |seg<0>         |   11.339|
+A<3>           |seg<1>         |   11.235|
+A<3>           |seg<2>         |   11.338|
+A<3>           |seg<3>         |   11.457|
+A<3>           |seg<4>         |   11.328|
+A<3>           |seg<5>         |   11.770|
+A<3>           |seg<6>         |   11.291|
+A<4>           |seg<0>         |   10.966|
+A<4>           |seg<1>         |   10.862|
+A<4>           |seg<2>         |   10.965|
+A<4>           |seg<3>         |   11.084|
+A<4>           |seg<4>         |   10.955|
+A<4>           |seg<5>         |   11.397|
+A<4>           |seg<6>         |   10.918|
+A<5>           |seg<0>         |   10.624|
+A<5>           |seg<1>         |   10.520|
+A<5>           |seg<2>         |   10.623|
+A<5>           |seg<3>         |   10.742|
+A<5>           |seg<4>         |   10.613|
+A<5>           |seg<5>         |   11.055|
+A<5>           |seg<6>         |   10.576|
+A<6>           |seg<0>         |   10.595|
+A<6>           |seg<1>         |   10.491|
+A<6>           |seg<2>         |   10.594|
+A<6>           |seg<3>         |   10.713|
+A<6>           |seg<4>         |   10.584|
+A<6>           |seg<5>         |   11.026|
+A<6>           |seg<6>         |   10.547|
+A<7>           |seg<0>         |    9.517|
+A<7>           |seg<1>         |    9.413|
+A<7>           |seg<2>         |    9.516|
+A<7>           |seg<3>         |    9.635|
+A<7>           |seg<4>         |    9.506|
+A<7>           |seg<5>         |    9.948|
+A<7>           |seg<6>         |    9.469|
+B<0>           |seg<0>         |   12.021|
+B<0>           |seg<1>         |   11.917|
+B<0>           |seg<2>         |   12.020|
+B<0>           |seg<3>         |   12.139|
+B<0>           |seg<4>         |   12.010|
+B<0>           |seg<5>         |   12.452|
+B<0>           |seg<6>         |   11.973|
+B<1>           |seg<0>         |   12.336|
+B<1>           |seg<1>         |   12.232|
+B<1>           |seg<2>         |   12.335|
+B<1>           |seg<3>         |   12.454|
+B<1>           |seg<4>         |   12.325|
+B<1>           |seg<5>         |   12.767|
+B<1>           |seg<6>         |   12.288|
+B<2>           |seg<0>         |   12.091|
+B<2>           |seg<1>         |   11.987|
+B<2>           |seg<2>         |   12.090|
+B<2>           |seg<3>         |   12.209|
+B<2>           |seg<4>         |   12.080|
+B<2>           |seg<5>         |   12.522|
+B<2>           |seg<6>         |   12.043|
+B<3>           |seg<0>         |   11.549|
+B<3>           |seg<1>         |   11.445|
+B<3>           |seg<2>         |   11.548|
+B<3>           |seg<3>         |   11.667|
+B<3>           |seg<4>         |   11.538|
+B<3>           |seg<5>         |   11.980|
+B<3>           |seg<6>         |   11.501|
+B<4>           |seg<0>         |   11.460|
+B<4>           |seg<1>         |   11.356|
+B<4>           |seg<2>         |   11.459|
+B<4>           |seg<3>         |   11.578|
+B<4>           |seg<4>         |   11.449|
+B<4>           |seg<5>         |   11.891|
+B<4>           |seg<6>         |   11.412|
+B<5>           |seg<0>         |   11.447|
+B<5>           |seg<1>         |   11.343|
+B<5>           |seg<2>         |   11.446|
+B<5>           |seg<3>         |   11.565|
+B<5>           |seg<4>         |   11.436|
+B<5>           |seg<5>         |   11.878|
+B<5>           |seg<6>         |   11.399|
+B<6>           |seg<0>         |   10.783|
+B<6>           |seg<1>         |   10.679|
+B<6>           |seg<2>         |   10.782|
+B<6>           |seg<3>         |   10.901|
+B<6>           |seg<4>         |   10.772|
+B<6>           |seg<5>         |   11.214|
+B<6>           |seg<6>         |   10.735|
+B<7>           |seg<0>         |   10.222|
+B<7>           |seg<1>         |   10.118|
+B<7>           |seg<2>         |   10.221|
+B<7>           |seg<3>         |   10.340|
+B<7>           |seg<4>         |   10.211|
+B<7>           |seg<5>         |   10.653|
+B<7>           |seg<6>         |   10.174|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Dec 12 11:48:25 2019 
+Analysis completed Thu Dec 12 14:05:53 2019 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 5003 MB
+Peak Memory Usage: 5005 MB
 
 
 
