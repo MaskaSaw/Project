@@ -1,0 +1,2 @@
+vhdl work "Multiplier.vhd"
+vhdl work "MultiplierTB.vhd"

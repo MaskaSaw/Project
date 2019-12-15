@@ -1,0 +1,207 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Divider.twx Divider.ncd -o Divider.twr Divider.pcf
+
+Design file:              Divider.ncd
+Physical constraint file: Divider.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |IntOutput<0>   |    7.880|
+A<0>           |Output<0>      |    8.731|
+A<1>           |IntOutput<0>   |    9.889|
+A<1>           |IntOutput<1>   |    7.473|
+A<1>           |Output<0>      |   10.740|
+A<1>           |Output<1>      |    7.767|
+A<2>           |IntOutput<0>   |   13.389|
+A<2>           |IntOutput<1>   |   10.973|
+A<2>           |IntOutput<2>   |    8.485|
+A<2>           |Output<0>      |   14.240|
+A<2>           |Output<1>      |   11.267|
+A<2>           |Output<2>      |    9.355|
+A<3>           |IntOutput<0>   |   13.963|
+A<3>           |IntOutput<1>   |   11.547|
+A<3>           |IntOutput<2>   |    9.059|
+A<3>           |IntOutput<3>   |    7.111|
+A<3>           |Output<0>      |   14.814|
+A<3>           |Output<1>      |   11.841|
+A<3>           |Output<2>      |    9.929|
+A<3>           |Output<3>      |    6.793|
+A<4>           |IntOutput<0>   |   15.627|
+A<4>           |IntOutput<1>   |   13.211|
+A<4>           |IntOutput<2>   |   10.723|
+A<4>           |IntOutput<3>   |    8.775|
+A<4>           |IntOutput<4>   |    7.203|
+A<4>           |Output<0>      |   16.478|
+A<4>           |Output<1>      |   13.505|
+A<4>           |Output<2>      |   11.593|
+A<4>           |Output<3>      |    8.457|
+A<4>           |Output<4>      |    7.103|
+A<5>           |IntOutput<0>   |   16.869|
+A<5>           |IntOutput<1>   |   14.453|
+A<5>           |IntOutput<2>   |   11.965|
+A<5>           |IntOutput<3>   |   10.017|
+A<5>           |IntOutput<4>   |    8.445|
+A<5>           |IntOutput<5>   |    6.394|
+A<5>           |Output<0>      |   17.720|
+A<5>           |Output<1>      |   14.747|
+A<5>           |Output<2>      |   12.835|
+A<5>           |Output<3>      |    9.699|
+A<5>           |Output<4>      |    8.345|
+A<5>           |Output<5>      |    6.202|
+A<6>           |IntOutput<0>   |   17.354|
+A<6>           |IntOutput<1>   |   14.938|
+A<6>           |IntOutput<2>   |   12.450|
+A<6>           |IntOutput<3>   |   10.502|
+A<6>           |IntOutput<4>   |    8.930|
+A<6>           |IntOutput<5>   |    6.879|
+A<6>           |IntOutput<6>   |    6.099|
+A<6>           |Output<0>      |   18.205|
+A<6>           |Output<1>      |   15.232|
+A<6>           |Output<2>      |   13.320|
+A<6>           |Output<3>      |   10.184|
+A<6>           |Output<4>      |    8.830|
+A<6>           |Output<5>      |    6.687|
+A<6>           |Output<6>      |    5.976|
+A<7>           |Output<7>      |    5.237|
+B<0>           |IntOutput<0>   |   17.749|
+B<0>           |IntOutput<1>   |   15.333|
+B<0>           |IntOutput<2>   |   12.845|
+B<0>           |IntOutput<3>   |   10.897|
+B<0>           |IntOutput<4>   |    9.325|
+B<0>           |IntOutput<5>   |    7.274|
+B<0>           |IntOutput<6>   |    6.256|
+B<0>           |Output<0>      |   18.600|
+B<0>           |Output<1>      |   15.627|
+B<0>           |Output<2>      |   13.715|
+B<0>           |Output<3>      |   10.579|
+B<0>           |Output<4>      |    9.225|
+B<0>           |Output<5>      |    7.082|
+B<0>           |Output<6>      |    6.133|
+B<1>           |IntOutput<0>   |   17.378|
+B<1>           |IntOutput<1>   |   14.962|
+B<1>           |IntOutput<2>   |   12.474|
+B<1>           |IntOutput<3>   |   10.526|
+B<1>           |IntOutput<4>   |    8.954|
+B<1>           |IntOutput<5>   |    6.903|
+B<1>           |IntOutput<6>   |    5.939|
+B<1>           |Output<0>      |   18.229|
+B<1>           |Output<1>      |   15.256|
+B<1>           |Output<2>      |   13.344|
+B<1>           |Output<3>      |   10.208|
+B<1>           |Output<4>      |    8.854|
+B<1>           |Output<5>      |    6.711|
+B<1>           |Output<6>      |    5.816|
+B<2>           |IntOutput<0>   |   17.240|
+B<2>           |IntOutput<1>   |   14.824|
+B<2>           |IntOutput<2>   |   12.336|
+B<2>           |IntOutput<3>   |   10.388|
+B<2>           |IntOutput<4>   |    8.816|
+B<2>           |IntOutput<5>   |    6.765|
+B<2>           |IntOutput<6>   |    6.242|
+B<2>           |Output<0>      |   18.091|
+B<2>           |Output<1>      |   15.118|
+B<2>           |Output<2>      |   13.206|
+B<2>           |Output<3>      |   10.070|
+B<2>           |Output<4>      |    8.716|
+B<2>           |Output<5>      |    6.573|
+B<2>           |Output<6>      |    6.119|
+B<3>           |IntOutput<0>   |   17.705|
+B<3>           |IntOutput<1>   |   15.289|
+B<3>           |IntOutput<2>   |   12.801|
+B<3>           |IntOutput<3>   |   10.853|
+B<3>           |IntOutput<4>   |    9.281|
+B<3>           |IntOutput<5>   |    7.230|
+B<3>           |IntOutput<6>   |    6.091|
+B<3>           |Output<0>      |   18.556|
+B<3>           |Output<1>      |   15.583|
+B<3>           |Output<2>      |   13.671|
+B<3>           |Output<3>      |   10.535|
+B<3>           |Output<4>      |    9.181|
+B<3>           |Output<5>      |    7.038|
+B<3>           |Output<6>      |    5.968|
+B<4>           |IntOutput<0>   |   17.835|
+B<4>           |IntOutput<1>   |   15.419|
+B<4>           |IntOutput<2>   |   12.931|
+B<4>           |IntOutput<3>   |   10.983|
+B<4>           |IntOutput<4>   |    9.411|
+B<4>           |IntOutput<5>   |    7.360|
+B<4>           |IntOutput<6>   |    6.818|
+B<4>           |Output<0>      |   18.686|
+B<4>           |Output<1>      |   15.713|
+B<4>           |Output<2>      |   13.801|
+B<4>           |Output<3>      |   10.665|
+B<4>           |Output<4>      |    9.311|
+B<4>           |Output<5>      |    7.168|
+B<4>           |Output<6>      |    6.695|
+B<5>           |IntOutput<0>   |   17.405|
+B<5>           |IntOutput<1>   |   14.989|
+B<5>           |IntOutput<2>   |   12.501|
+B<5>           |IntOutput<3>   |   10.553|
+B<5>           |IntOutput<4>   |    8.981|
+B<5>           |IntOutput<5>   |    6.930|
+B<5>           |IntOutput<6>   |    6.388|
+B<5>           |Output<0>      |   18.256|
+B<5>           |Output<1>      |   15.283|
+B<5>           |Output<2>      |   13.371|
+B<5>           |Output<3>      |   10.235|
+B<5>           |Output<4>      |    8.881|
+B<5>           |Output<5>      |    6.738|
+B<5>           |Output<6>      |    6.265|
+B<6>           |IntOutput<0>   |   17.559|
+B<6>           |IntOutput<1>   |   15.143|
+B<6>           |IntOutput<2>   |   12.655|
+B<6>           |IntOutput<3>   |   10.707|
+B<6>           |IntOutput<4>   |    9.135|
+B<6>           |IntOutput<5>   |    7.084|
+B<6>           |IntOutput<6>   |    6.542|
+B<6>           |Output<0>      |   18.410|
+B<6>           |Output<1>      |   15.437|
+B<6>           |Output<2>      |   13.525|
+B<6>           |Output<3>      |   10.389|
+B<6>           |Output<4>      |    9.035|
+B<6>           |Output<5>      |    6.892|
+B<6>           |Output<6>      |    6.419|
+B<7>           |Output<7>      |    5.355|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Dec 15 16:13:28 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5003 MB
+
+
+

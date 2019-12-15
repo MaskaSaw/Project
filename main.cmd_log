@@ -59,3 +59,5 @@ map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf main.ucf 
 bitgen -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -ifn "C:/Users/Maska_O/Documents/GitHub/Project/main.xst" -ofn "C:/Users/Maska_O/Documents/GitHub/Project/main.syr" 
+xst -intstyle ise -ifn "C:/Users/Maska_O/Documents/GitHub/Project/main.xst" -ofn "C:/Users/Maska_O/Documents/GitHub/Project/main.syr" 

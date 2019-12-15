@@ -1,0 +1,84 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Multiplier.twx Multiplier.ncd -o Multiplier.twr
+Multiplier.pcf
+
+Design file:              Multiplier.ncd
+Physical constraint file: Multiplier.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Output<0>      |    5.559|
+A<0>           |Output<1>      |    5.726|
+A<0>           |Output<2>      |    5.433|
+A<0>           |Output<3>      |    5.197|
+A<0>           |Output<4>      |    6.130|
+A<0>           |Output<5>      |    5.932|
+A<1>           |Output<1>      |    5.619|
+A<1>           |Output<2>      |    5.514|
+A<1>           |Output<3>      |    5.341|
+A<1>           |Output<4>      |    5.972|
+A<1>           |Output<5>      |    5.826|
+A<2>           |Output<2>      |    5.547|
+A<2>           |Output<3>      |    5.513|
+A<2>           |Output<4>      |    6.321|
+A<2>           |Output<5>      |    6.167|
+A<3>           |Output<7>      |    5.487|
+B<0>           |Output<0>      |    5.255|
+B<0>           |Output<1>      |    5.464|
+B<0>           |Output<2>      |    5.189|
+B<0>           |Output<3>      |    5.469|
+B<0>           |Output<4>      |    6.278|
+B<0>           |Output<5>      |    6.128|
+B<1>           |Output<1>      |    5.270|
+B<1>           |Output<2>      |    5.104|
+B<1>           |Output<3>      |    5.277|
+B<1>           |Output<4>      |    6.083|
+B<1>           |Output<5>      |    5.945|
+B<2>           |Output<2>      |    5.355|
+B<2>           |Output<3>      |    5.043|
+B<2>           |Output<4>      |    6.021|
+B<2>           |Output<5>      |    5.881|
+B<3>           |Output<7>      |    5.492|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Dec 15 13:18:38 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5002 MB
+
+
+

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/dd/Lab2Dop/sSegDisplayTest_isim_beh.exe" -prj "C:/dd/Lab2Dop/sSegDisplayTest_beh.prj" "work.sSegDisplayTest" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Maska_O/Documents/GitHub/Project/Divider1_isim_beh.exe" -prj "C:/Users/Maska_O/Documents/GitHub/Project/Divider1_beh.prj" "work.Divider1" 
